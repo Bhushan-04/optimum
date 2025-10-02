@@ -103,7 +103,4 @@ VITE_BACKEND_URL=
 npm run dev
 ```
 
-
-
-
-
+Check out the demo video: [Watch Demo](https://www.loom.com/share/228f25e47489461da24d0e771d2c4fb9?sid=8a7097c3-b9fa-4ee4-a6ac-e45371c5771f)

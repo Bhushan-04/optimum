@@ -20,7 +20,7 @@ app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 
 sequelize.sync().then(() => {
-    //  syncDb();
+     syncDb();
   console.log('Database synced');
   app.listen(process.env.PORT, () => {
     console.log(`server is running on ${process.env.PORT}`);

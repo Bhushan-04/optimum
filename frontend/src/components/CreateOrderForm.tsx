@@ -20,6 +20,7 @@ useEffect(() => {
       const products = await getAllProducts();
       const map: { [key: number]: Product } = {};
       products.forEach((p: any) => (map[p.id] = p));
+
       setProductMap(map);
     } catch (error) {
       console.error('Failed to fetch products', error);
@@ -35,7 +36,7 @@ useEffect(() => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['orders'] });
-      queryClient.invalidateQueries({ queryKey: ['products'] }); // refresh stock
+      queryClient.invalidateQueries({ queryKey: ['products'] });
       setSelectItems([]);
       setCustomerName('');
       setButtonText('Order Placed!');
